@@ -1,0 +1,35 @@
+* {
+    padding: 0px;
+    margin:  0px;
+}
+
+.login-page {
+    display: flex;
+    align-items: center;
+    margin: 150px 100px;
+    gap: 100px;
+}
+
+.image {
+    width: 510px;
+    height: 529px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 20px;
+    width: 440px;
+    height: 512px;
+}
+
+.login-type {
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+}
+
+.login-enter {
+    gap: 20px;
+}
