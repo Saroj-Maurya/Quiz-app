@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App</title>
+    <title>Login</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
@@ -13,33 +13,43 @@
         <div class="login-image">
             <img src="assets/images/hello.jpg" alt="hello">
         </div>
-        <div class="login">
-            <div class="login-type">
-                <div class="login-enter">
-                    Login
+
+        <form class="login"> 
+            <div class="main-login">
+                <div class="login-section">
+                    <div class="login-enter">
+                        Login
+                    </div>
+                    <div class="login-details">
+                        Please enter your details below
+                    </div>
                 </div>
-                <div class="login-details">
-                    Please enter your details below
+                <div class="login-type">
+                    <label for="email" class="label-field">Email ID <span>*</span></label>
+                    <input type="email" name="email" placeholder="xyz@123gmail.com" class="input-field"/>
                 </div>
+                <div class="login-type">
+                    <label for="password" class="label-field">Password <span>*</span></label>
+                    <input type="password" name="password" placeholder="Password" class="input-field"/>
+                </div>
+                <div class="login-button">
+                    <button>Login</button>
+                </div>
+                <div class="google-signup">
+                    <button><span><img src="assets/images/google.jpg" alt="google"></span><span>Sign up with
+                            google</span></button>
+                </div>
+                <!-- <div class="login-signup">
+                    <span>Don't have an account?</span><span><a href="signup.html">Sign up?</a></span>
+                </div> -->
+
             </div>
-            <div class="login-type">
-                <label for="email">Email ID*</label>
-                <input type="email" name="email" placeholder="xyz@123gmail.com" />
-            </div>
-            <div class="login-type">
-                <label for="password">Password*</label>
-                <input type="password" name="password" placeholder="Password" />
-            </div>
-            <div class="login-button">
-                <button>Login</button>
-            </div>
-            <div class="google-signup">
-                <button><span><img src="assets/images/google.jpg" alt="google"></span><span>Sign up with google</span></button>
-            </div>
-            <div class="signup">
+            <div class="login-signup">
                 <span>Don't have an account?</span><span><a href="signup.html">Sign up?</a></span>
             </div>
-        </div>
+            
+        </form>
+
     </div>
 
 </body>

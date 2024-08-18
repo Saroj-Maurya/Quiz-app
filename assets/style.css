@@ -11,44 +11,67 @@
     --secondary-color: #8E8E93;
     --body-fonts: "Inter", sans-serif;
     --button-color: #F3BD00;
-    --width-size: 440px;
+    /* --width-size: 440px; */
 
 }
 
 /* Login page start */
 
+
 .login-page {
     display: flex;
     align-items: center;
-    margin: 150px 100px;
-    gap: 100px;
+    height: 100vh;
 }
 
 .login-image {
-    width: 510px;
-    height: 529px;
+    flex: 1;
+    text-align: center;
+    margin: auto 0;
+}
+
+.login-image img {
+    width: 500px;
 }
 
 .login {
+    flex: 1;
+    text-align: left;
+    margin: auto 0;
+    width: 440px;
+    height: 512px;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    gap: 20px;
-    width: var(--width-size);
-    height: 512px;
+    gap: 64px;
+}
+
+.main-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.login-section{
+    width: 440px;
+    height: 65px;
+    gap: 8px;
 }
 
 .login-enter {
-  font-family: var(--body-fonts);
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 32px;
-  line-height: 38.4px;
-  color: var(--primary-color);
+    width: 87px;
+    height: 38px;
+    font-family: var(--body-fonts);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 38.4px;
+    color: var(--primary-color);
 }
 
 .login-details {
+    width: 240px;
+    height: 19px;
     font-family: var(--body-fonts);
     font-size: 16px;
     font-weight: 400;
@@ -60,11 +83,22 @@
     display: flex;
     flex-direction: column;
     margin: 2px;
+    width: 440px;
+    height: 81px;
+    gap: 6px;
 }
 
-input[type=email], input[type=password], input[type=text]{
-    width: 406px;
-    height: 19px;
+.label-field span {
+    font-family: var(--body-fonts);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: red;
+}
+
+.input-field{
+    height: 51px;
     padding: 16px;
     border-radius: 8px;
     border: 1px solid #8E8E93;
@@ -75,21 +109,26 @@ input[type=email], input[type=password], input[type=text]{
     line-height: 19.2px;
 }
 
-.login-type label {
+.label-field {
+    text-align: left;
     font-family: var(--body-fonts);
     font-size: 16px;
     font-weight: 400;
     line-height: 19.2px;
-    color: var(--primary-color);
+    color: #1C1C1E;
+}
+
+.login-button {
+    width: 440px;
+    height: 43px;
 }
 
 .login-button button{
-    width: var(--width-size);
+    width: 440px;
     height: 43px;
     padding: 12px 24px;
-    gap: 4px;
     border-radius: 100px;
-    animation-duration: 0ms;
+    /* animation-duration: 0ms; */
     background-color: var(--button-color);
     font-family: var(--body-fonts);
     font-size: 18px;
@@ -114,24 +153,19 @@ input[type=email], input[type=password], input[type=text]{
     display: flex;
     justify-content: center;
     border: none;
-    /* border: 1px solid #DEDEDE; */
     box-shadow: 0px 8px 16px 0px #1C1C1E1A;
 }
 
-.signup-login{
-    width: 249px;
-    height: 19px;
+.login-signup {
     font-family: var(--body-fonts);
     font-size: 16px;
     font-weight: 400;
     line-height: 19.2px;
     color: #344054;
-    display: flex;
-    justify-content: center;
-    margin: auto;
+    text-align: center;
 }
 
-.signup-login span a {
+.login-signup span a {
     font-family: var(--body-fonts);
     font-size: 16px;
     font-weight: 700;
@@ -238,7 +272,7 @@ input[type=email], input[type=password], input[type=text]{
     color: #0948B4;
 }
 
-.login{
+.signup-login{
     width: 200px;
     height: 19px;
     font-family: var(--body-fonts);
@@ -248,7 +282,7 @@ input[type=email], input[type=password], input[type=text]{
     color: var(--secondary-color);
 }
 
-.login span a {
+.signup-login span a {
     font-family: var(--body-fonts);
     font-size: 16px;
     font-weight: 700;
