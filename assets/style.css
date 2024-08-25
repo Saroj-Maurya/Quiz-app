@@ -21,7 +21,7 @@
 .login-page {
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 150vh;
 }
 
 .login-image {
@@ -55,7 +55,7 @@
 .login-section{
     width: 440px;
     height: 65px;
-    gap: 8px;
+    /* gap: 8px; */
 }
 
 .login-enter {
@@ -178,31 +178,44 @@
 /* Signup page start */
 .signup-page {
     display: flex;
-    margin: 150px 100px;
-    gap: 100px;
+    align-items: center;
+    height: 100vh;
 }
 
 .signup-image {
+    flex: 1;
+    text-align: center;
+    margin: auto 0;
+}
+
+.signup-image img{
     width: 510px;
     height: 529px;
 }
 
 .signup {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    gap: 20px;
-    width: 440px;
-    height: 642px;
-    margin: 100px;
-    margin-top: 10px;
+   flex: 1;
+   text-align: left;
+   margin: auto 0;
+   width: 440px;
+   display: flex;
+   flex-direction: column;
+   /* align-items: center; */
+   gap: 40px;
 }
 
-.signup-type {
+.main-signup{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 32px;
+}
+
+.signup-section{
     width: 440px;
     height: 65px;
-    gap: 8px;
 }
+
 
 .signup-enter {
     width: 110px;
@@ -224,14 +237,11 @@
     color: var(--secondary-color);
 }
 
-.signup-type label {
-    width: 83px;
-    height: 19px;
-    font-family: var(--body-fonts);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.2px;
-    color: var(--primary-color)
+.signup-type {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    height: 70px;
 }
 
 .signup-button button {
@@ -251,7 +261,7 @@
 .signup-accept {
     width: 437px;
     height: 14px;
-    margin-left: 150px;
+    text-align: center;
 }
 
 /* .signup-accept input {
@@ -280,6 +290,7 @@
     font-weight: 400;
     line-height: 19.2px;
     color: var(--secondary-color);
+    text-align: center;
 }
 
 .signup-login span a {

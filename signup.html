@@ -12,9 +12,9 @@
         <div class="signup-image">
             <img src="assets/images/welcome.jpg" alt="">
         </div>
-        <form class="signup">
-            <div>
-                <div class="sinup-type">
+        <form class="signup" onsubmit="$event.preventDefault();">
+            <div class="main-signup">
+                <div class="signup-section">
                     <div class="signup-enter">
                         Signup
                     </div>
@@ -22,35 +22,36 @@
                         Sign up to join
                     </div>
                 </div>
-                <div class="sinup-type">
-                    <label for="name">Full Name</label>
-                    <input type="text" name="name" placeholder="Full Name" id="name">
+                <div class="signup-type">
+                    <label for="name" class="label-field">Full Name <span>*</span></label>
+                    <input type="text" class="input-field" name="name" placeholder="Full Name" id="name">
                 </div>
-                <div class="sinup-type">
-                    <label for="email">Email ID</label>
-                    <input type="email" name="email" placeholder="xyz12@gmail.com" id="email">
+                <div class="signup-type">
+                    <label for="email"class="label-field" >Email ID <span>*</span></label>
+                    <input type="email" class="input-field" name="email" placeholder="xyz12@gmail.com" id="email">
                 </div>
-                <div class="sinup-type">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" placeholder="Password" id="password">
+                <div class="signup-type">
+                    <label for="password" class="label-field">Password <span>*</span></label>
+                    <input type="password" class="input-field" name="password" placeholder="Password" id="password">
                 </div>
                 <div class="signup-button">
-                    <button onclick="submit()">Submit</button>
+                    <button type="button" onclick="registration()">Submit</button>
                 </div>
                 <div class="google-signup">
                     <button><span><img src="assets/images/google.jpg" alt="google"></span><span>Sign up with google</span></button>
                 </div>
                 <div class="signup-accept">
-                    <input type="checkbox" name="checkbox"  checked/>
+                    <input type="checkbox" id="checkbox" name="checkbox" />
                     <label for="checkbox">I accpet <span>Terms & Conditions</span></label>
                 </div>
                 <div class="signup-login">
                     <span>Have an account?</span><span><a href="login.html">Log in ?</a></span>
                 </div>
             </div>
-            
+        
         </form>
     </div>
+    <script src="assets/script.js"></script>
     
 </body>
 </html>
